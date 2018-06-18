@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v7/BngMUXZYTXPIvIBgJJSb6ufJ5qA.ttf) format('truetype');
+}
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  display: table;
+  clear: both;
+}
+@media (min-width: 1200px) {
+  width: 1170px;
+}
+@media (min-width: 992px) {
+  width: 970px;
+}
+@media (min-width: 768px) {
+  width: 750px;
+}
+.title {
+  margin: 100px 0;
+}
+.title .title_main {
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.title .title_polosa {
+  margin: 10px auto 20px auto;
+  width: 50px;
+  height: 1px;
+  border: 1px solid #ebebeb;
+}
+.title .title_text {
+  color: #828282;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.card_text {
+  color: #828282;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+header {
+  padding: 25px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+header .container span {
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+}
+.logo {
+  display: block;
+  float: left;
+}
+nav {
+  margin: 5px 0 0 0;
+  display: block;
+  float: right;
+}
+nav ul li {
+  display: block;
+  float: left;
+  padding: 4px 15px;
+}
+nav ul li a {
+  display: block;
+  color: black;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #2aaf74;
+  text-decoration: none;
+}
+nav ul li.login {
+  background: #2aaf74;
+}
+nav ul li.login a {
+  display: block;
+  color: white;
+  padding: 0 10px;
+}
+nav ul li.login:hover {
+  box-shadow: inset 0 63px 58px -63px rgba(0, 0, 0, 0.61);
+}
+.sli_der .style_slider {
+  box-shadow: 0 55px 196px -50px rgba(0, 0, 0, 0.52);
+}
+.sli_der .carousel-item {
+  transition: transform 1s ease, opacity 0.5s ease-out;
+}
+.sli_der h5 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 52px;
+}
+.sli_der span {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+.cards .cartka {
+  color: #828282;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.cards .cartka .img {
+  margin-bottom: 30px;
+}
+.cards .cartka .caption {
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.parallax {
+  overflow: hidden;
+}
+.parallax .parallax_content {
+  margin: 100px 0;
+}
+.parallax .parallax_content .numb_card .parallax_img {
+  color: #fff;
+}
+.parallax .parallax_content .numb_card .numb {
+  color: #ffffff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 44px;
+  line-height: 75px;
+  margin-bottom: 10px;
+}
+.parallax .parallax_content .numb_card .parallax-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  line-height: 27px;
+}
+.security_sistems .security_system {
+  padding-bottom: 20px;
+}
+.security_sistems .security_system p {
+  background-image: url(../img/project-1.jpg);
+  background-position: center center;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+.security_sistems .security_system .description .main_description {
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 25px 0;
+}
+.security_sistems .security_system .description .second_description {
+  color: #828282;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  padding-bottom: 25px;
+}
+.security_sistems .security_system .description .second_description div {
+  margin-bottom: 25px;
+}
+.security_sistems .security_system .description .second_description a {
+  border: 2px black solid;
+  padding: 11px 15px;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.security_sistems .security_system .description .second_description a:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+}
+.insta {
+  margin: 23px 0;
+  overflow: hidden;
+}
+.insta .insta_main .insta_text {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 15px;
+  border: 2px solid black;
+}
+.insta .insta_main .insta_text:after {
+  height: 2px;
+}
+.insta .insta_main .insta_text:befor {
+  height: 2px;
+}
+/*# sourceMappingURL=style.css.map */
