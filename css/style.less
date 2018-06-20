@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&subset=cyrillic');
 @sourse_sanc: 'Source Sans Pro', sans-serif;
 @roboto_slab: 'Roboto Slab', serif;
 @green: #2aaf74;
 @black: black;
 @secondary_text: #828282;
 
-
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
 
 .container {
   margin: 0 auto;
@@ -24,7 +29,6 @@
   @media (min-width: 768px) {
       width: 750px;
   }
-
 
 
 .title {
@@ -152,10 +156,30 @@ nav {
 
 .cards {
 
+
   .cartka {
 
-    .img {
-      margin-bottom: 30px;
+    &:hover {
+      .icon {
+        color: white;
+      }
+      .img{
+        background: #2aaf74;
+        transition: .5s;
+      }
+
+    }
+    .img{
+      padding-top: 30px;
+      background: rgba(0, 0, 0, 0.04);
+      border-radius: 50%;
+      margin: 0 auto 25px auto;
+      width: 100px;
+      height: 100px;
+      color: @black;
+      font-size: 40px;
+      line-height: 40px;
+      transition: .5s;
     }
 
     .caption {
@@ -180,6 +204,8 @@ nav {
 
       .parallax_img {
         color: #fff;
+        font-size: 45px;
+        line-height: 45px;
       }
 
       .numb {
@@ -276,7 +302,66 @@ nav {
 
 
 .insta {
-  insta_main {
+  margin: 10px 0 20px 0;
 
+  h2 {
+    color: @black;
+    font-size: 14px;
+    font-family: @sourse_sanc;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+    span {
+      border: 2px solid @black;
+      position: relative;
+      padding: 10px 15px;
+
+      &::before {
+        margin-left: -125px;
+        top: 18px;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        height: 1px;
+        width: 100px;
+        content: '';
+      }
+
+      &::after {
+        right: 0;
+        margin-right: -110px;
+        top: 18px;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        height: 1px;
+        width: 100px;
+        content: '';
+      }
+    }
+  }
+  .insta-photo {
+    margin: 0;
+    a{
+      display: block;
+      padding: 0;
+      &:hover {
+        -webkit-box-shadow: inset -66px -3px 43px 20px rgba(0,0,0,0.7);
+        box-shadow: inset -66px -3px 43px 20px rgba(0,0,0,0.7);
+        transition: .2s;
+      }
+
+      img{
+        width: 100%;
+        height: auto;
+        &:hover {
+          -webkit-box-shadow: inset -66px -3px 43px 20px rgba(0,0,0,0.7);
+          box-shadow: inset -66px -3px 43px 20px rgba(0,0,0,0.7);
+          transition: .2s;
+        }
+      }
+    }
   }
 }

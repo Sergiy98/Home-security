@@ -1,14 +1,10 @@
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7g.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v7/BngMUXZYTXPIvIBgJJSb6ufJ5qA.ttf) format('truetype');
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 .container {
   margin: 0 auto;
@@ -127,8 +123,24 @@ nav ul li.login:hover {
   font-weight: 400;
   margin-bottom: 40px;
 }
+.cards .cartka:hover .icon {
+  color: white;
+}
+.cards .cartka:hover .img {
+  background: #2aaf74;
+  transition: .5s;
+}
 .cards .cartka .img {
-  margin-bottom: 30px;
+  padding-top: 30px;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 50%;
+  margin: 0 auto 25px auto;
+  width: 100px;
+  height: 100px;
+  color: black;
+  font-size: 40px;
+  line-height: 40px;
+  transition: .5s;
 }
 .cards .cartka .caption {
   color: black;
@@ -145,6 +157,8 @@ nav ul li.login:hover {
 }
 .parallax .parallax_content .numb_card .parallax_img {
   color: #fff;
+  font-size: 45px;
+  line-height: 45px;
 }
 .parallax .parallax_content .numb_card .numb {
   color: #ffffff;
@@ -208,5 +222,64 @@ nav ul li.login:hover {
 .security_sistems .security_system .description .second_description a:hover {
   color: white;
   background: rgba(0, 0, 0, 0.8);
+}
+.insta {
+  margin: 10px 0 20px 0;
+}
+.insta h2 {
+  color: black;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.insta h2 span {
+  border: 2px solid black;
+  position: relative;
+  padding: 10px 15px;
+}
+.insta h2 span::before {
+  margin-left: -125px;
+  top: 18px;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  height: 1px;
+  width: 100px;
+  content: '';
+}
+.insta h2 span::after {
+  right: 0;
+  margin-right: -110px;
+  top: 18px;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  height: 1px;
+  width: 100px;
+  content: '';
+}
+.insta .insta-photo {
+  margin: 0;
+}
+.insta .insta-photo a {
+  display: block;
+  padding: 0;
+}
+.insta .insta-photo a:hover {
+  -webkit-box-shadow: inset -66px -3px 43px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: inset -66px -3px 43px 20px rgba(0, 0, 0, 0.7);
+  transition: .2s;
+}
+.insta .insta-photo a img {
+  width: 100%;
+  height: auto;
+}
+.insta .insta-photo a img:hover {
+  -webkit-box-shadow: inset -66px -3px 43px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: inset -66px -3px 43px 20px rgba(0, 0, 0, 0.7);
+  transition: .2s;
 }
 /*# sourceMappingURL=style.css.map */
