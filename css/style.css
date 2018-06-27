@@ -89,6 +89,7 @@ nav ul li a:hover {
 }
 nav ul li.login {
   background: #2aaf74;
+  transition: .5s;
 }
 nav ul li.login a {
   display: block;
@@ -97,6 +98,7 @@ nav ul li.login a {
 }
 nav ul li.login:hover {
   box-shadow: inset 0 63px 58px -63px rgba(0, 0, 0, 0.61);
+  transition: .5s;
 }
 .sli_der .style_slider {
   box-shadow: 0 55px 196px -50px rgba(0, 0, 0, 0.52);
@@ -223,8 +225,69 @@ nav ul li.login:hover {
   color: white;
   background: rgba(0, 0, 0, 0.8);
 }
+.second_slider {
+  background-image: url(../img/vintage-paper-texture-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 110px 0;
+  padding: 110px 0;
+}
+.second_slider h2 {
+  margin-bottom: 50px;
+}
+.second_slider h2 span {
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  line-height: 36px;
+  position: relative;
+  padding: 7px 15px;
+}
+.second_slider h2 span:before {
+  position: absolute;
+  top: 24px;
+  left: -40px;
+  content: "";
+  width: 40px;
+  height: 1px;
+  color: black;
+}
+.second_slider h2 span::after {
+  position: absolute;
+  top: 24px;
+  right: -40px;
+  content: '';
+  width: 40px;
+  height: 1px;
+  color: black;
+}
+.second_slider .sl {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.second_slider .sl .sl_slide .sl_img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.second_slider .sl .sl_slide .sl_text .sl_name {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.second_slider .sl .sl_slide .sl_text .sl_name small {
+  letter-spacing: 3px;
+}
+.second_slider .sl .sl_slide .sl_text .sl_desc {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
 .insta {
-  margin: 10px 0 20px 0;
+  margin: 10px 0 0 0;
 }
 .insta h2 {
   color: black;
@@ -265,21 +328,84 @@ nav ul li.login:hover {
   margin: 0;
 }
 .insta .insta-photo a {
-  display: block;
-  padding: 0;
+  background: url(../img/project-1.jpg) center center;
+  min-height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: .2s;
 }
 .insta .insta-photo a:hover {
-  -webkit-box-shadow: inset -66px -3px 43px 20px rgba(0, 0, 0, 0.7);
-  box-shadow: inset -66px -3px 43px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: inset -55px 0px 54px 27px rgba(0, 0, 0, 0.7);
   transition: .2s;
 }
-.insta .insta-photo a img {
-  width: 100%;
-  height: auto;
+footer {
+  min-height: 300px;
+  background: url(../img/aleksei-kipin-715753-unsplash.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 60px 40px 60px;
 }
-.insta .insta-photo a img:hover {
-  -webkit-box-shadow: inset -66px -3px 43px 20px rgba(0, 0, 0, 0.7);
-  box-shadow: inset -66px -3px 43px 20px rgba(0, 0, 0, 0.7);
-  transition: .2s;
+footer .l_space {
+  display: block;
+  float: left;
+}
+footer .l_space .mini_head .footer_logo {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+}
+footer .l_space .mini_head .footer_nav {
+  line-height: 30px;
+  display: table;
+}
+footer .l_space .mini_head .footer_nav ul {
+  padding: 0;
+}
+footer .l_space .mini_head .footer_nav ul li {
+  display: block;
+  float: left;
+  padding: 4px 10px 4px 0;
+}
+footer .l_space .mini_head .footer_nav ul li a {
+  display: block;
+  color: black;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+}
+footer .l_space .mini_head .footer_nav ul li a:hover {
+  color: #2aaf74;
+  text-decoration: none;
+}
+footer .l_space .mini_head .copyright {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+}
+footer .l_space .mini_head .social {
+  padding: 0 10px;
+}
+footer .l_space .mini_head .social span {
+  border: #33383b 2px solid;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 40px 5px;
+}
+footer .l_space .mini_head .social span:hover {
+  background: #2aaf74;
+}
+footer .l_space .mini_head .social span a img {
+  color: white;
+  width: 35px;
+  height: 35px;
+}
+footer .r_space {
+  padding: 0;
+  display: block;
+  float: right;
+}
+footer .r_space .feedback_form {
+  float: right;
 }
 /*# sourceMappingURL=style.css.map */
