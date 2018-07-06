@@ -6,13 +6,31 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="js/sign_in.js" defer></script>
-    <link rel="stylesheet" href="css/sign_in.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Home Security</title>
 </head>
 <body>
+<header>
+    <div class="container">
+        <span class="logo">Home Security</span>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Other</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="login"><a href="#">Log In</a></li>
+                <li class="login"><a href="sign_in_form.html">Sign In</a></li>
+            </ul>
+        </nav>
 
+    </div>
+</header>
 <div class="form">
-    <h1>Форма реєстрації</h1>
+    <h1>Registration form</h1>
     <form action="#" name="form_name" id="js_register_form">
         <div class="form_group">
             <input type="text" placeholder="First name" name="first_name">
@@ -27,7 +45,10 @@
             <input type="tel" placeholder="Number" name="number">
         </div>
         <div class="form_group">
-            <input type="password" placeholder="Password" name="password">
+            <input type="password" id="pswd1" placeholder="Password" name="password1">
+        </div>
+        <div class="form_group">
+            <input type="password" placeholder="Confirm Password" name="password2">
         </div>
         <div class="submit">
             <input type="submit" name="submit" value="Submit">
@@ -35,7 +56,44 @@
     </form>
 </div>
 
-<script src="js/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="js/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+<footer class="">
+    <div class="l_space col-sm-12 col-md-6">
+        <div class="mini_head">
+            <div class="footer_logo">Home security</div>
+            <div class="footer_nav">
+                <ul>
+                    <li><a href="#"><b>Home</b></a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Other</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="copyright">Home security © 2018</div>
+            <div class="social row">
+                <span class="facebook"><a href="#"><img src="img/004-facebook.svg" alt=""></a></span>
+                <span class="twitter"><a href="#"><img src="img/002-twitter-logo-silhouette.svg" alt=""></a></span>
+                <span class="google"><a href="#"><img src="img/001-google-plus-symbol.svg" alt=""></a></span>
+                <span class="instagram"><a href="#"><img src="img/003-instagram.svg" alt=""></a></span>
+            </div>
+        </div>
+    </div>
+    <div class="r_space col-sm-12 col-md-6">
+        <p>Contact Us</p>
+        <div class="feedback_form">
+            <div class="e-mail"><input type="text" name="email" placeholder="E-mail"></div>
+            <div class="text_area"><textarea name="massage" placeholder="Massage"></textarea></div>
+            <div class="form_button"><button>Send</button></div>
+        </div>
+    </div>
+</footer>
+<script defer src="https://i.icomoon.io/public/temp/73dcb52e31/UntitledProject/svgxuse.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="js/jquery.spincrement.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/spincrement.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

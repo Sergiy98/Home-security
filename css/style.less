@@ -4,6 +4,7 @@
 @black: black;
 @secondary_text: #828282;
 
+
 .icon {
   display: inline-block;
   width: 1em;
@@ -78,6 +79,7 @@ header {
       color: @black;
       font-weight: 700;
       font-size: 24px;
+      line-height: 41px;
     }
   }
 }
@@ -91,10 +93,8 @@ nav {
   margin: 5px 0 0 0;
   display: block;
   float: right;
-
-
-
   ul {
+    margin: 0;
     li {
       display: block;
       float: left;
@@ -511,11 +511,127 @@ footer {
 
   .r_space{
     padding: 0;
-    display: block;
     float: right;
+
+    p{
+      display: inline-block;
+      font-family: @sourse_sanc;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 2px;
+      margin: 8px 0;
+    }
 
     .feedback_form {
       float: right;
+      display: inline-block;
+
+      input{
+        margin-bottom: 15px;
+        width: 400px;
+        height: 50px;
+        padding: 18px;
+        border-radius: 3px;
+        border: none;
+        resize: none;
+      }
+
+      textarea{
+        margin-bottom: 20px;
+        width: 400px;
+        height: 100px;
+        padding: 18px;
+        border-radius: 3px;
+        border: none;
+        resize: none;
+      }
+
+        .form_button{
+          button{
+            cursor: pointer;
+            display: block;
+            float: right;
+            padding: 15px 30px;
+            font-weight: bold;
+            border: 0;
+            border-radius: 3px;
+            font-family: @sourse_sanc;
+          }
+        }
+
+
+    }
+
+
+  }
+}
+
+
+
+//FORM
+
+
+.form {
+  margin: 100px 0;
+  text-align: center;
+
+  h1{
+    font-family: @sourse_sanc;
+    font-size: 24px;
+    line-height: 41px;
+    font-weight: 700;
+  }
+
+}
+
+.form_group {
+  margin: 10px 0;
+  position: relative;
+  & input {
+    outline:none;
+    width: 280px;
+    line-height: 25px;
+    border: 1px solid #828282;
+    box-shadow: 0 0 3px;
+    border-radius: 50px;
+    padding: 0 10px;
+
+    &:focus {
+      border-color: #2aaf74;
+      box-shadow: none;
+    }
+
+    &.error {
+      border-color: red;
+      box-shadow: none;
+      display: inline-block;
+    }
+
+  }
+  label{
+    position: absolute;
+    color: red;
+    margin: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+.submit {
+  text-align: center;
+  padding: 8px 0px;
+  & input {
+    color: white;
+    font-size: 16px;
+    //text-transform: uppercase;
+    border-radius: 5px;
+    padding: 5px 50px;
+    background: @green;
+    border: 1px solid black;
+    transition: .5s;
+    &:hover {
+      cursor: pointer;
+      box-shadow: inset 0 63px 58px -63px rgba(0, 0, 0, 0.61);
+      transition: .5s;
     }
   }
 }

@@ -15,9 +15,14 @@ $(function () {
                 required:true,
                 number: true
             },
-            password: {
+            password1: {
                 required: true,
                 minlength: 6
+            },
+            password2: {
+                required: true,
+                minlength: 6,
+                equalTo: "#pswd1"
             }
         }
     });
