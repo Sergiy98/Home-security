@@ -458,11 +458,11 @@ footer .r_space .feedback_form .form_button button {
   line-height: 41px;
   font-weight: 700;
 }
-.form_group {
+.form .form_group {
   margin: 10px 0;
   position: relative;
 }
-.form_group input {
+.form .form_group input {
   outline: none;
   width: 280px;
   line-height: 25px;
@@ -471,26 +471,26 @@ footer .r_space .feedback_form .form_button button {
   border-radius: 50px;
   padding: 0 10px;
 }
-.form_group input:focus {
+.form .form_group input:focus {
   border-color: #2aaf74;
   box-shadow: none;
 }
-.form_group input.error {
+.form .form_group input.error {
   border-color: red;
   box-shadow: none;
   display: inline-block;
 }
-.form_group label {
+.form .form_group label {
   position: absolute;
   color: red;
   margin: 5px 10px;
   font-size: 12px;
 }
-.submit {
+.form .submit {
   text-align: center;
   padding: 8px 0px;
 }
-.submit input {
+.form .submit input {
   color: white;
   font-size: 16px;
   border-radius: 5px;
@@ -499,7 +499,7 @@ footer .r_space .feedback_form .form_button button {
   border: 1px solid black;
   transition: .5s;
 }
-.submit input:hover {
+.form .submit input:hover {
   cursor: pointer;
   box-shadow: inset 0 63px 58px -63px rgba(0, 0, 0, 0.61);
   transition: .5s;
