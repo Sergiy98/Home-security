@@ -85,16 +85,17 @@ header {
 }
 
 .logo {
-  display: block;
+  display: inline-block;
   float: left;
 }
 
 nav {
-  margin: 5px 0 0 0;
-  display: block;
+  //margin: 5px 0 0 0;
+  display: inline-block;
   float: right;
   ul {
     margin: 0;
+    overflow: auto;
     li {
       display: block;
       float: left;
@@ -432,9 +433,8 @@ nav {
   }
 
 footer {
-  min-height: 365px;
-  background: url(../img/aleksei-kipin-715753-unsplash.jpg) center center;
-  background-repeat: no-repeat;
+  overflow: auto;
+  background: url(../img/aleksei-kipin-715753-unsplash.jpg);
   background-size: cover;
   padding: 50px 60px 40px 60px;
 
@@ -513,18 +513,27 @@ footer {
     padding: 0;
     float: right;
 
-    p{
-      display: inline-block;
-      font-family: @sourse_sanc;
-      font-size: 24px;
-      line-height: 36px;
-      letter-spacing: 2px;
-      margin: 8px 0;
+    @media(max-width: 800px){
+      float: none;
     }
+
+
 
     .feedback_form {
       float: right;
-      display: inline-block;
+      //display: inline-block;
+      @media(max-width: 800px){
+        float: none;
+      }
+
+      p{
+        //display: inline-block;
+        font-family: @sourse_sanc;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 2px;
+        margin: 8px 0;
+      }
 
       input{
         margin-bottom: 15px;
@@ -534,6 +543,10 @@ footer {
         border-radius: 3px;
         border: none;
         resize: none;
+
+        @media(max-width: 1000px){
+          width: 250px;
+        }
       }
 
       textarea{
@@ -544,6 +557,10 @@ footer {
         border-radius: 3px;
         border: none;
         resize: none;
+
+        @media(max-width: 1000px){
+          width: 250px;
+        }
       }
 
         .form_button{
@@ -556,6 +573,10 @@ footer {
             border: 0;
             border-radius: 3px;
             font-family: @sourse_sanc;
+
+            @media(max-width: 800px){
+              float: none;
+            }
           }
         }
 
@@ -572,7 +593,7 @@ footer {
 
 
 .form {
-  margin: 100px 0;
+  margin: 50px 0;
   text-align: center;
 
   h1 {

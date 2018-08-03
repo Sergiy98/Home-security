@@ -64,16 +64,16 @@ header .container span {
   line-height: 41px;
 }
 .logo {
-  display: block;
+  display: inline-block;
   float: left;
 }
 nav {
-  margin: 5px 0 0 0;
-  display: block;
+  display: inline-block;
   float: right;
 }
 nav ul {
   margin: 0;
+  overflow: auto;
 }
 nav ul li {
   display: block;
@@ -343,9 +343,8 @@ nav ul li.login:hover {
   transition: .2s;
 }
 footer {
-  min-height: 365px;
-  background: url(../img/aleksei-kipin-715753-unsplash.jpg) center center;
-  background-repeat: no-repeat;
+  overflow: auto;
+  background: url(../img/aleksei-kipin-715753-unsplash.jpg);
   background-size: cover;
   padding: 50px 60px 40px 60px;
 }
@@ -408,17 +407,25 @@ footer .r_space {
   padding: 0;
   float: right;
 }
-footer .r_space p {
-  display: inline-block;
+@media (max-width: 800px) {
+  footer .r_space {
+    float: none;
+  }
+}
+footer .r_space .feedback_form {
+  float: right;
+}
+@media (max-width: 800px) {
+  footer .r_space .feedback_form {
+    float: none;
+  }
+}
+footer .r_space .feedback_form p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 2px;
   margin: 8px 0;
-}
-footer .r_space .feedback_form {
-  float: right;
-  display: inline-block;
 }
 footer .r_space .feedback_form input {
   margin-bottom: 15px;
@@ -429,6 +436,11 @@ footer .r_space .feedback_form input {
   border: none;
   resize: none;
 }
+@media (max-width: 1000px) {
+  footer .r_space .feedback_form input {
+    width: 250px;
+  }
+}
 footer .r_space .feedback_form textarea {
   margin-bottom: 20px;
   width: 400px;
@@ -437,6 +449,11 @@ footer .r_space .feedback_form textarea {
   border-radius: 3px;
   border: none;
   resize: none;
+}
+@media (max-width: 1000px) {
+  footer .r_space .feedback_form textarea {
+    width: 250px;
+  }
 }
 footer .r_space .feedback_form .form_button button {
   cursor: pointer;
@@ -448,8 +465,13 @@ footer .r_space .feedback_form .form_button button {
   border-radius: 3px;
   font-family: 'Source Sans Pro', sans-serif;
 }
+@media (max-width: 800px) {
+  footer .r_space .feedback_form .form_button button {
+    float: none;
+  }
+}
 .form {
-  margin: 100px 0;
+  margin: 50px 0;
   text-align: center;
 }
 .form h1 {

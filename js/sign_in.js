@@ -1,4 +1,4 @@
-$(function () {
+$(function valid() {
     $('#js_register_form').validate({
         rules: {
             first_name: {
